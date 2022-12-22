@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>nav-bar2.0</title>
+    <link rel="stylesheet" href="login.css" />
+    <link rel="stylesheet" href="style.css" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+    />
+  </head>
+  <body>
+    <header>
+        <div class="wrapper">
+            <div class="navbar">
+                <div id="logo-container">
+                    <img src="img/iccw_logo.png" alt="logo">
+                </div>
+                <div id="logo-name">
+                    <a href="https://nallampatti.world/index.html"><h1>Nallampatti Insights</h1></a> 
+                </div>
+                
+                <ul>
+                    <li><a href="index.html" class="a_parent">
+                        <div class="wrap">
+                            <span class="icon">
+                                <i class="fas fa-home" aria-hidden="true"></i>
+                            </span>
+                            <span class="text">Home</span>
+                        </div>
+                    </a></li>
+                    
+                    <div class="dropdown">
+                        <!-- <span class="icon"><i class="fas fa-chart-line" aria-hidden="true" id="dash-icon"></i></span> -->
+                        <button class="dropbtn"><i class="fas fa-chart-line" aria-hidden="true" id="dash-icon"></i>&nbsp;Live Dashboard
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="water_quality.html">Water quality monitoring – Nallampatti</a>
+                          <a href="waterbodies.html">Waterbodies and water quality-Nallampatti</a>
+                          <a href="soil.html">Soil monitoring – Nallampatti</a>
+                          <a href="Household_Health_Survey.html">Household Health Survey – Nallampatti</a>
+                        </div>
+                      </div>
+
+
+                    
+                    <li><a href="maps.html" class="a_parent">
+                        <div class="wrap">
+                            <span class="icon">
+                            <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                            </span>
+                            <span class="text">Live Map</span>
+                        </div>
+                    </a></li>
+                    <li><a href="team.html" class="a_parent">
+                        <div class="wrap">
+                            <span class="icon">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                            </span>
+                            <span class="text">Team</span>
+                        </div>
+                    </a></li>
+
+                    <li><a href="contact_us.html" class="a_parent">
+                        <div class="wrap">
+                            <span class="icon">
+                            <i class="fas fa-mail-bulk" aria-hidden="true"></i>
+                            </span>
+                            <span class="text">Contact</span>
+                        </div>
+                    </a></li>
+                    </ul>
+                    <form action="login.html">
+                    <button class="glow-on-hover" type="submit">LOGIN</button></form>
+            </div>
+            
+        </div>
+    </header>
+
+    <main>
+      <div class="container-login">
+        <div class="wrap-login100 p-l-55 p-r-55 p-t-80 p-b-30">
+          <form id="login-form validate-form" name="myform">
+            <div class="logo p-b-37">
+              <img src="img/iccw_logo.png" alt="logo" />
+            </div>
+            <span class="login-form-title p-b-37">Login</span>
+            <div
+              class="wrap-input100 validate-input m-b-20"
+              data-validate="Enter Username"
+            >
+              <input
+                type="text"
+                id="username"
+                class="input100"
+                name="username"
+                placeholder="username"
+              />
+              <span class="focus-input100"></span>
+            </div>
+
+            <div
+              class="wrap-input100 validate-input m-b-20"
+              data-validate="Enter password"
+            >
+              <input
+                id="password"
+                type="password"
+                class="input100"
+                name="pass"
+                placeholder="password"
+              />
+              <span class="focus-input100"></span>
+            </div>
+
+            <div
+              class="remeber validate-check m-b-20"
+              data-validate="remember-me"
+            >
+              <input
+                type="checkbox"
+                class="form-remember"
+                value="IsRemember"
+                name="remember-me"
+              />
+              <span class="me-remember">Remember me?</span>
+            </div>
+
+            <div class="container-login100-form-btn">
+              <button class="login100-form-btn">Login</button>
+            </div>
+            <div class="error">
+              <!--Invalid Creds, Contact Admin. -->
+              {{inval_cred}}
+            </div>
+          </form>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

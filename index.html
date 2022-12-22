@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nav-bar2.0</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+    />
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="navbar">
+                <div id="logo-container">
+                    <img src="img/iccw_logo.png" alt="logo">
+                </div>
+                <div id="logo-name">
+                    <a href="https://nallampatti.world/index.html"><h1>Nallampatti Insights</h1></a> 
+                </div>
+                
+                <ul>
+                    <li><a href="index.html" class="a_parent">
+                        <div class="wrap">
+                            <span class="icon">
+                                <i class="fas fa-home" aria-hidden="true"></i>
+                            </span>
+                            <span class="text">Home</span>
+                        </div>
+                    </a></li>
+                    
+                    <div class="dropdown">
+                        <!-- <span class="icon"><i class="fas fa-chart-line" aria-hidden="true" id="dash-icon"></i></span> -->
+                        <button class="dropbtn"><i class="fas fa-chart-line" aria-hidden="true" id="dash-icon"></i>&nbsp;Live Dashboard
+                          <i class="fa fa-caret-down"></i>
+                        </button>
+                        <div class="dropdown-content">
+                          <a href="water_quality.html">Water quality monitoring – Nallampatti</a>
+                          <a href="waterbodies.html">Waterbodies and water quality-Nallampatti</a>
+                          <a href="soil.html">Soil monitoring – Nallampatti</a>
+                          <a href="Household_Health_Survey.html">Household Health Survey – Nallampatti</a>
+                        </div>
+                      </div>
+
+
+                    
+                    <li><a href="maps.html" class="a_parent">
+                        <div class="wrap">
+                            <span class="icon">
+                            <i class="fas fa-map-marked-alt" aria-hidden="true"></i>
+                            </span>
+                            <span class="text">Live Map</span>
+                        </div>
+                    </a></li>
+                    <li><a href="team.html" class="a_parent">
+                        <div class="wrap">
+                            <span class="icon">
+                            <i class="fas fa-users" aria-hidden="true"></i>
+                            </span>
+                            <span class="text">Team</span>
+                        </div>
+                    </a></li>
+
+                    <li><a href="contact_us.html" class="a_parent">
+                        <div class="wrap">
+                            <span class="icon">
+                            <i class="fas fa-mail-bulk" aria-hidden="true"></i>
+                            </span>
+                            <span class="text">Contact</span>
+                        </div>
+                    </a></li>
+                    </ul>
+                    <form action="login.html">
+                    <button class="glow-on-hover" type="submit">LOGIN</button></form>
+            </div>
+            
+        </div>
+    </header>
+
+    <div class="opening_main">
+        <h1>Welcome</h1>
+        <p class="center_text">
+        <bf>"A digital-twin platform for the water-health nexus in a rural village"</bf>
+        </p>
+       
+        <p class="home_detail">
+            <br>
+            The aim of this project is to develop a digital tool to demonstrate the relationship between
+            water quality and
+            health in rural villages. We have chosen <a href=https://www.townpanchayat.in/nallampatti>Nallampatti Town
+                Panchayat</a>, a village in Erode district, Tamil Nadu, as the study
+            village as the incidence of non-communicable diseases, such as diabetes, hypertension, heart disease and
+            cancer were found in published research studies to be up to twice as high as the average. Our project seeks
+            to use data collected by sensors, samples, and surveys to create a dynamic
+            replica of the situation, or digital twin, to conclusively establish and monitor the correlation between
+            environmental factors such as water quality, soil quality,
+            farming practices, and industrial activities in the region with the cases of non-communicable
+            diseases. Once this has been achieved, appropriate solutions can be suggested by the digital twin and
+            implemented in the field.
+
+            The project has been funded by <a href=https://aquamap.iitm.ac.in>AquaMAP Centre, IIT Madras</a>, and is
+            being carried out by <a href=https://iccw.world>International Centre for Clean Water (ICCW)</a>, IIT Madras
+            Research Park and their partners.</p>
+        
+    </div>
+    <div class="image_homepage">
+        <img src="image_1.jpeg" id="imghome1">
+        <img src="image_2.jpeg" id="imghome2">
+    </div>
+    <!-- cross cutting modal -->
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01"/>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
